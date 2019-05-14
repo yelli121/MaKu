@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Income
+comment1.params=user\ id\ income\ incomeType
+comment1.target=Income(User,\ int,\ int,\ IncomeType)
+comment2.params=
+comment2.target=int\ getId()
+comment3.params=
+comment3.target=User\ getUser()
+comment4.params=
+comment4.target=int\ getIncome()
+comment5.params=
+comment5.target=IncomeType\ getIncomeType()
+comment6.params=
+comment6.target=void\ setId()
+comment7.params=
+comment7.target=void\ setUser()
+comment8.params=
+comment8.target=void\ setIncome()
+comment9.params=
+comment9.target=void\ setIncomeType()
+numComments=10

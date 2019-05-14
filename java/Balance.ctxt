@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Balance
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Balance\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=id\ income\ budget
+comment1.target=Balance(int,\ Income,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Balance\r\n
+comment2.params=
+comment2.target=User\ getUser()
+comment3.params=
+comment3.target=void\ setUser()
+comment4.params=
+comment4.target=int\ getBalance()
+comment5.params=
+comment5.target=void\ setBalance()
+comment6.params=
+comment6.target=int\ getId()
+comment7.params=
+comment7.target=void\ setId()
+comment8.params=
+comment8.target=int\ getBudget()
+comment9.params=
+comment9.target=void\ setBudget()
+numComments=10

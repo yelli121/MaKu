@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=DatabaseBalance
+comment1.params=
+comment1.target=DatabaseBalance()
+comment2.params=
+comment2.target=java.util.ArrayList\ getBalanceDatabase()
+comment3.params=
+comment3.target=int\ getLastBalanceID()
+comment4.params=Balance
+comment4.target=boolean\ addBalance(Balance)
+comment5.params=id
+comment5.target=Balance\ getBalance(int)
+comment6.params=id
+comment6.target=boolean\ removeBalance(int)
+numComments=7

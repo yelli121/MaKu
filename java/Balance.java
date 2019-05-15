@@ -19,7 +19,11 @@ public class Balance
      * @param budget        pengeluaran yang didapat dari pemasukan                     
      */
     
+<<<<<<< HEAD
     public Balance(Income income, int budget){
+=======
+    public Balance( int id, Income income, int budget){
+>>>>>>> 95fbe00fef4b7a33659c33a1704d9130ead8b269
         this.user = income.getUser();
         this.budget = (income.getIncome()*budget)/100;
         this.balance = income.getIncome()-getBudget(); 

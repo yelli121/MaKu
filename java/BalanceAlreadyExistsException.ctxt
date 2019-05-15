@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #BlueJ class context
 comment0.target=BalanceAlreadyExistsException
 comment0.text=\r\n\ Mengidikasikan\ balance\ sudah\ ada/digunakan\r\n\ \r\n\ @author\ Muhamad\ Fahriza\ Novriansyah\r\n\ @version\ 1.0\r\n
@@ -8,3 +9,15 @@ comment2.params=
 comment2.target=java.lang.String\ getExMessage()
 comment2.text=\r\n\ Untuk\ menampilkan\ pesan\ pemberitahuan\ berupa\ String\r\n\ @return\ balance\ sudah\ ada/digunakan\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n
 numComments=3
+=======
+#BlueJ class context
+comment0.target=BalanceAlreadyExistsException
+comment0.text=\r\n\ Mengidikasikan\ balance\ sudah\ ada/digunakan\r\n\ \r\n\ @author\ Muhamad\ Fahriza\ Novriansyah\r\n\ @version\ 1.0\r\n
+comment1.params=balance_input
+comment1.target=BalanceAlreadyExistsException(Balance)
+comment1.text=\r\n\ Konstruktor\ untuk\ objek\ kelas\ BalanceAlreadyExistsException\r\n\ @param\ balance_input\ balance\ yang\ sudah\ ada\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n
+comment2.params=
+comment2.target=java.lang.String\ getExMessage()
+comment2.text=\r\n\ Untuk\ menampilkan\ pesan\ pemberitahuan\ berupa\ String\r\n\ @return\ balance\ sudah\ ada/digunakan\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n
+numComments=3
+>>>>>>> 95fbe00fef4b7a33659c33a1704d9130ead8b269

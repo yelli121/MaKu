@@ -51,6 +51,7 @@ public class User {
         // put your code here
         return this.name;
     }
+    
     public String getUsername() {
         // put your code here
         return this.username;
@@ -76,9 +77,7 @@ public class User {
 
         return birthDate;
     }
-
-
-
+    
     public void setName(String name) {
         // put your code here
         this.name = name;

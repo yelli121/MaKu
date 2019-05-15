@@ -1,6 +1,3 @@
- 
-
-
 /**
  * Enumeration class Day - write a description of the enum class here
  *
@@ -9,17 +6,18 @@
  */
 public enum IncomeType
 {
-    Monthly("Monthly"),Daily("Daily");
-    
+    Monthly("Monthly"),Additional("Additional");
+        
     String incomeType;
-    
+        
     IncomeType(String incomeType){
         this.incomeType=incomeType;
-        
-}
-public String toString(){
-    return incomeType;
-}
+    }
+    
+    public String toString(){
+        return incomeType;
+    }
+    
 }
 
 

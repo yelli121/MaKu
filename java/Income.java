@@ -1,5 +1,4 @@
- 
-
+import java.util.Scanner;
 
 /**
  * Write a description of class income here.
@@ -7,9 +6,9 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-import java.util.Scanner;
 
-public class Income
+
+public abstract class Income
 {
     // instance variables - replace the example below with your own
     private User user;
@@ -17,11 +16,9 @@ public class Income
     private int income;
     private IncomeType incomeType;
     
-    public Income (User user,int id, int income,IncomeType incomeType){
-        this.id = id;
-        this.user = user;
+    public Income (int income){
         this.income=income;
-        this.incomeType = incomeType;
+        setId(DatabaseIncome.getLastIncomeID()+1);
     }
     
     public int getId(){
@@ -36,28 +33,24 @@ public class Income
         return income;
     }
     
-    public IncomeType getIncomeType(){
-        return incomeType;
-    }
+    public abstract IncomeType getIncomeType();
     
-    public void setId(){
+    public void setId(int id){
         this.id=id;
         
     }
     
-    public void setUser(){
+    public void setUser(User user){
         this.user=user;
         
     }
     
-    public void setIncome(){
+    public void setIncome(int income){
         this.income=income;
         
     }
     
-    public void setIncomeType(){
-        this.incomeType=incomeType;
-    }
+    public abstract String toString();
     
     /*public static void main(String[] args){
         Scanner input = new Scanner(System.in);

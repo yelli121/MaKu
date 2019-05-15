@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=DatabaseExpense
+comment0.text=\r\n\ Kelas\ database\ untuk\ objek\ Expense.\r\n\r\n\ @author\ Adel\ Fahmi\ Karim\r\n\ @version\ 15\ Mei\ 2019\r\n
+comment1.params=
+comment1.target=DatabaseExpense()
+comment1.text=\r\n\ Konstruktor\ untuk\ kelas\ DatabaseExpense.\r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getExpenseDatabase()
+comment2.text=\r\n\ Accessor\ untuk\ parameter\ EXPENSE_DATABASE.\r\n\ @return\ EXPENSE_DATABASE\r\n
+comment3.params=
+comment3.target=int\ getLastExpenseID()
+comment3.text=\r\n\ Accessor\ untuk\ parameter\ LAST_EXPENSE_ID.\r\n\ @return\ LAST_EXPENSE_ID\r\n
+comment4.params=expense
+comment4.target=boolean\ addExpense(Expense)
+comment4.text=\r\n\ Method\ untuk\ memasukkan\ objek\ Expense\ baru\ ke\ array\ DatabaseExpense.\r\n\ Ketentuan\ yang\ dibuat\ adalah\ satu\ User\ hanya\ dapat\ memiliki\ satu\ Expense\ dalam\ database.\r\n
+comment5.params=id
+comment5.target=Expense\ getExpenseFromID(int)
+comment5.text=\r\n\ Accessor\ untuk\ objek\ Expense\ dalan\ DatabaseExpense.\r\n\ Expense\ akan\ dicari\ berdasarkan\ parameter\ id-nya.\r\n
+comment6.params=user
+comment6.target=Expense\ getExpenseFromUser(User)
+comment6.text=\r\n\ Accessor\ untuk\ objek\ Expense\ dalan\ DatabaseExpense.\r\n\ Expense\ akan\ dicari\ berdasarkan\ parameter\ user-nya.\r\n
+comment7.params=user
+comment7.target=boolean\ removeExpense(User)
+comment7.text=\r\n\ Method\ untuk\ menghilangkan\ sebuah\ objek\ Expense\ dari\ Database.\r\n\ Expense\ akan\ dicari\ berdasarkan\ parameter\ user-nya\r\n
+numComments=8

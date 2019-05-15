@@ -1,15 +1,22 @@
 #BlueJ class context
 comment0.target=DatabaseBalance
+comment0.text=\r\n\ Kelas\ DatabaseBalance\ merupakan\ kumpulan\ balance\ yang\ berupa\ list/\ database\ balance\r\n\r\n\ @author\ Muhamad\ Fahriza\ Novriansyah\r\n\ @version\ 1.0\r\n
 comment1.params=
 comment1.target=DatabaseBalance()
+comment1.text=\r\n\ Konstruktor\ untuk\ objek\ kelas\ DatabaseBalance\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n
 comment2.params=
 comment2.target=java.util.ArrayList\ getBalanceDatabase()
+comment2.text=\r\n\ Method\ getBalanceDatabase\ ini\ bertujuan\ untuk\ mendapatkan\ balance\ pada\ database\r\n\ \r\n\ @return\ BALANCE_DATABASE\ balance\ yang\ ada\ di\ dalam\ database\r\n
 comment3.params=
 comment3.target=int\ getLastBalanceID()
-comment4.params=Balance
+comment3.text=\r\n\ Method\ getLastBalanceID\ ini\ bertujuan\ untuk\ mendapatkan\ id\ balance\ yang\ paling\ akhir\ didatabase\r\n\ \r\n\ @return\ LAST_BALANCE_ID\ id\ balance\ terakhir\ yang\ ada\ di\ dalam\ database\r\n
+comment4.params=balance
 comment4.target=boolean\ addBalance(Balance)
+comment4.text=\r\n\ Method\ addBalance\ ini\ bertujuan\ untuk\ menambahkan\ balance\ ke\ BALANCE_DATABASE\r\n\ \r\n\ @return\ apakah\ balance\ sudah\ berhasil\ ditambahkan\ atau\ gagal\r\n\ @throws\ BalanceAlreadyExistsException\ jika\ sudah\ ada\ balance\ yang\ sama\ idnya\r\n
 comment5.params=id
 comment5.target=Balance\ getBalance(int)
+comment5.text=\r\n\ Method\ getBalance\ ini\ bertujuan\ untuk\ mendapatkan\ id\ balance\r\n\ \r\n\ @return\ balance\ yang\ ada\ didalam\ database\ dan\ sesuai\ berupa\ objek\r\n
 comment6.params=id
 comment6.target=boolean\ removeBalance(int)
+comment6.text=\r\n\ Method\ removeBalance\ ini\ bertujuan\ untuk\ menghapus\ balance\ dari\ BALANCE_DATABASE\r\n\ \r\n\ @return\ apakah\ balance\ sudah\ berhasil\ dihapus\ atau\ tidak\r\n\ @throws\ BalanceNotFoundException\ jika\ balance\ id\ tidak\ ditemukan\r\n
 numComments=7

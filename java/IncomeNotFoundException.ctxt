@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #BlueJ class context
 comment0.target=IncomeNotFoundException
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ IncomeNotFoundException\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
@@ -7,13 +6,3 @@ comment1.target=IncomeNotFoundException(int)
 comment2.params=
 comment2.target=java.lang.String\ getExMessage()
 numComments=3
-=======
-#BlueJ class context
-comment0.target=IncomeNotFoundException
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ IncomeNotFoundException\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=income_error
-comment1.target=IncomeNotFoundException(int)
-comment2.params=
-comment2.target=java.lang.String\ getExMessage()
-numComments=3
->>>>>>> 95fbe00fef4b7a33659c33a1704d9130ead8b269

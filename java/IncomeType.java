@@ -1,25 +1,23 @@
- 
-
-
 /**
- * Enumeration class Day - write a description of the enum class here
+ * Enum class dari Income
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author Yelli Yulfita
+ * @version 15/05/2019
  */
 public enum IncomeType
 {
-    Monthly("Monthly"),Daily("Daily");
-    
+    Monthly("Monthly"),Additional("Additional");
+        
     String incomeType;
-    
+        
     IncomeType(String incomeType){
         this.incomeType=incomeType;
-        
-}
-public String toString(){
-    return incomeType;
-}
+    }
+    
+    public String toString(){
+        return incomeType;
+    }
+    
 }
 
 

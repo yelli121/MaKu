@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=DatabaseIncome
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ DatabaseIncome\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=DatabaseIncome()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DatabaseIncome\r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getBalanceDatabase()
+comment3.params=
+comment3.target=int\ getLastIncomeID()
+comment4.params=income
+comment4.target=boolean\ addIncome(Income)
+comment5.params=id
+comment5.target=Income\ getIncome(int)
+comment6.params=id
+comment6.target=boolean\ removeIncome(int)
+numComments=7

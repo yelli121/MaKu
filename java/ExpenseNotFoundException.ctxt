@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ExpenseNotFoundException
+comment0.text=\r\n\ Kelas\ ekstensi\ Exception\ untuk\ error\ handling\ saat\ sebuah\ \r\n\ objek\ Expense\ tidak\ ditemukan\ di\ database.\r\n\ \r\n\ @author\ Adel\ Fahmi\ Karim\r\n\ @version\ 15\ Mei\ 2019\r\n
+comment1.params=user_input
+comment1.target=ExpenseNotFoundException(User)
+comment1.text=\r\n\ Konstruktor\ untuk\ kelas\ ExpenseNotFoundException.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getExMessage()
+comment2.text=\r\n\ Method\ untuk\ mengembalikan\ pesan\ saat\ error\ terjadi.\r\n
+numComments=3

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=DatabaseUser
+comment0.text=\r\n\ Class\ DatabaseCustomer\ merupakan\ database\ Customer\ barang.\r\n\ Terdiri\ dari\ array\ listCustomer\ untuk\ menyimpan\ daftar\ Customer\ dan\ objek\ Supply\r\n\r\n\ @author\ Bagaskara\ Ghanyvian\ Istiqlal\r\n\ @version\ 1.0\ 28/02/2019\r\n
+comment1.params=
+comment1.target=int\ getLastUserId()
+comment2.params=user
+comment2.target=boolean\ addUser(User)
+comment2.text=\r\n\ Method\ addCustomer\r\n\ digunakan\ untuk\ menambahkan\ objek\ Customer\ baru\ kedalam\ list\r\n\r\n\ @param\ customer\r\n\ @return\ boolean\ true\ sebagai\ status\ telah\ berhasil\ memasukan\r\n\ objek\r\n
+comment3.params=id
+comment3.target=boolean\ removeUser(int)
+comment3.text=\r\n\ Method\ removeItem\r\n\ digunakan\ untuk\ menghapus\ objek\ item\ dari\ dalam\ list\r\n\r\n\ @param\ id\r\n\ @return\ boolean\ true\ sebagai\ status\ telah\ berhasil\ menghapus\r\n\ objek\r\n
+comment4.params=
+comment4.target=java.util.ArrayList\ getCustomerDatabase()
+comment4.text=\r\n\ Method\ getListCustomer\r\n\ digunakan\ untuk\ mendapatkan\ list\ Customer\r\n\r\n\ @param\r\n\ @return\ String[]\ listCustomer\r\n
+comment5.params=id
+comment5.target=User\ getUser(int)
+comment5.text=\r\n\ Method\ getItem\r\n\ digunakan\ untuk\ mendapatkan\ item\r\n\r\n\ @param\r\n\ @return\ objek\ Customer\r\n
+comment6.params=username\ password
+comment6.target=User\ getUserLogin(java.lang.String,\ java.lang.String)
+numComments=7

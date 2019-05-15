@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=UserAlreadyExistException
+comment1.params=user_input
+comment1.target=UserAlreadyExistException(User)
+comment2.params=
+comment2.target=java.lang.String\ getExMessage()
+numComments=3

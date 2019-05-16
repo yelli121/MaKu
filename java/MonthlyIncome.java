@@ -1,10 +1,10 @@
 import java.text.*;
 import java.util.*;
 /**
- * Write a description of class Monthly here.
+ * Kelas MonthlyIncome yaitu child class dari Income
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Yelli Yulfita
+ * @version 15/05/2019
  */
 public class MonthlyIncome extends Income
 {
@@ -14,6 +14,11 @@ public class MonthlyIncome extends Income
     private Date date;
     private boolean isActive = false;
     
+    /**
+     * Konstruktor kelas MonthlyIncome
+     * @param user yaitu yang mempunyai saldo
+     * @param income yaitu pemasukkan yang akan dimasukkan ke saldo
+     */
     public MonthlyIncome(User user, int income)
     {
         super(income);
@@ -22,20 +27,40 @@ public class MonthlyIncome extends Income
         this.date = date;
     }
     
+    /**
+     * Method getIncomeType untuk memanggil income type
+     * 
+     * @return INCOME_TYPE
+     */
     public IncomeType getIncomeType(){
         return INCOME_TYPE;
     }
     
+    /**
+     * Method getUser ini bertujuan untuk mendapatkan user
+     * 
+     * @return user yang mempunyai balance/saldo
+     */
     public User getUser(){
         return user;
     }
     
+    /**
+     * Method setUser untuk mengatur user income
+     * 
+     * @return user yang mempunyai saldo
+     */
     public void setUser(User user){
         this.user=user;
     }
     
+    /**
+     * Method toString
+     * 
+     * @return string .
+     */
     public String toString(){
-        return "belum ditentukan";
+        return "Pemasukan bulanan " + user.getName() 
+        +" adalah " + getIncome()+ " rupiah.";
     }
 }
-

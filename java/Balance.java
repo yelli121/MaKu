@@ -8,7 +8,9 @@ public class Balance
 {
     // instance variables
     private User user;
+    private int income;
     private int balance;
+    private int budgetratio;
     private int budget;
     private int id;
      
@@ -20,7 +22,9 @@ public class Balance
      */
     
     public Balance(Income income, int budget){
+        this.income = income.getIncome();
         this.user = income.getUser();
+        this.budgetratio = budget;
         this.budget = (income.getIncome()*budget)/100;
         this.balance = income.getIncome()-getBudget(); 
     }
@@ -41,6 +45,14 @@ public class Balance
      */
     public void  setUser(User user){
         this.user = user;
+    }
+    
+    public int getIncome(){
+        return income;
+    }
+    
+    public void  setIncome(int income){
+        this.income = income;
     }
     
     /**
@@ -95,5 +107,24 @@ public class Balance
      */
     public void  setBudget(int budget){
         this.budget = budget;
+    }
+    
+    public int getBudgetRatio(){
+        return budgetratio;
+    }
+    
+    public void  setBudgetRatio(int budget){
+        this.budgetratio = budget;
+        this.budget = (getIncome()*budget)/100;
+        this.balance = getIncome()-getBudget(); 
+    }
+    
+    public String toString(){
+        return "Informasi User" 
+        + "\nNama User          :   "+ getUser().getName() 
+        + "\nJumlah Pemasukkan  :   "+ getIncome() 
+        + "\nAlokasi Budget     :   "+ getBudget() 
+        + "\nJumlah Tabungan    :   "+ getBalance();
+        
     }
 }

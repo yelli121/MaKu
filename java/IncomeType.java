@@ -1,8 +1,8 @@
 /**
- * Enumeration class Day - write a description of the enum class here
+ * Enum class dari Income
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author Yelli Yulfita
+ * @version 15/05/2019
  */
 public enum IncomeType
 {
@@ -19,8 +19,3 @@ public enum IncomeType
     }
     
 }
-
-
-
-    
-

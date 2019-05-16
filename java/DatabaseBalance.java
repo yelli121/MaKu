@@ -44,14 +44,17 @@ public class DatabaseBalance {
      * @return apakah balance sudah berhasil ditambahkan atau gagal
      * @throws BalanceAlreadyExistsException jika sudah ada balance yang sama idnya
      */
-    public static boolean addBalance(Balance balance)throws BalanceAlreadyExistsException
+    public static boolean addBalance(Balance balance)
     {
         for(Balance temp : BALANCE_DATABASE)
         {
-            if(temp.getId() == balance.getId())
+            if(temp.getUser() == balance.getUser())
             {
-                throw new BalanceAlreadyExistsException(balance);
+                temp.setIncome(temp.getIncome()+balance.getIncome());
+                temp.setBudgetRatio(balance.getBudgetRatio());
+                return true;
             }
+            
         }
 
         BALANCE_DATABASE.add(balance);
@@ -65,12 +68,12 @@ public class DatabaseBalance {
      * 
      * @return balance yang ada didalam database dan sesuai berupa objek
      */
-    public static Balance getBalance(int id)
+    public static Balance getBalance(User user)
     {
         Balance balance = null;
         for(Balance temp : BALANCE_DATABASE) 
         {
-            if(temp.getId() == id) 
+            if(temp.getUser() == user) 
             {
                 balance = temp;
             }

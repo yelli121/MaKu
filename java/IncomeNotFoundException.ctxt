@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=IncomeNotFoundException
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ IncomeNotFoundException\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Kelas\ yang\ mengindikasikan\ tidak\ terdapat\ Income\r\n\r\n\ @author\ Yelli\ Yulfita\r\n\ @version\ 15/05/2019\r\n
 comment1.params=income_error
 comment1.target=IncomeNotFoundException(int)
+comment1.text=\r\n\ Konstruktor\ untuk\ objek\ kelas\ IncomeeNotFoundException\r\n\ @param\ income_input\ income\ yang\ tidak\ ditemukan\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n
 comment2.params=
 comment2.target=java.lang.String\ getExMessage()
+comment2.text=\r\n\ Untuk\ menampilkan\ pesan\ dalam\ bentuk\ String\r\n\ @return\ income\ yang\ tidak\ ada\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n
 numComments=3

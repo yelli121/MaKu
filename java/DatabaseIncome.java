@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 /**
- * Write a description of class DatabaseIncome here.
+ * DatabaseIncome yaitu child class dari Income
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Yelli Yulfita
+ * @version 15/05/2019
  */
 public class DatabaseIncome
 {

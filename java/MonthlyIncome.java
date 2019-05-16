@@ -8,6 +8,7 @@ import java.util.*;
  */
 public class MonthlyIncome extends Income
 {
+    //instance Variables
     private static final IncomeType INCOME_TYPE=IncomeType.Monthly;
     SimpleDateFormat dateFormat = new SimpleDateFormat ("dd MM yyyy");
     private User user;
@@ -28,7 +29,11 @@ public class MonthlyIncome extends Income
     }
     
     /**
+<<<<<<< HEAD
      * Method getIncomeType untuk memanggil income type
+=======
+     * Method getIincomeType untuk memanggil income type
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
      * 
      * @return INCOME_TYPE
      */
@@ -57,7 +62,11 @@ public class MonthlyIncome extends Income
     /**
      * Method toString
      * 
+<<<<<<< HEAD
      * @return string .
+=======
+     * @return string "belum ditentukan".
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
      */
     public String toString(){
         return "Pemasukan bulanan " + user.getName() 

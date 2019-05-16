@@ -2,6 +2,7 @@
 dependency1.from=BalanceAlreadyExistsException
 dependency1.to=Balance
 dependency1.type=UsesDependency
+<<<<<<< HEAD
 dependency10.from=DatabaseExpense
 dependency10.to=User
 dependency10.type=UsesDependency
@@ -31,10 +32,42 @@ dependency18.to=User
 dependency18.type=UsesDependency
 dependency19.from=MaKu
 dependency19.to=Income
+=======
+dependency10.from=User
+dependency10.to=DatabaseUser
+dependency10.type=UsesDependency
+dependency11.from=AdditionalIncome
+dependency11.to=IncomeType
+dependency11.type=UsesDependency
+dependency12.from=AdditionalIncome
+dependency12.to=User
+dependency12.type=UsesDependency
+dependency13.from=DatabaseIncome
+dependency13.to=Income
+dependency13.type=UsesDependency
+dependency14.from=DatabaseIncome
+dependency14.to=IncomeAlreadyExistException
+dependency14.type=UsesDependency
+dependency15.from=DatabaseIncome
+dependency15.to=IncomeNotFoundException
+dependency15.type=UsesDependency
+dependency16.from=DatabaseExpense
+dependency16.to=Expense
+dependency16.type=UsesDependency
+dependency17.from=DatabaseExpense
+dependency17.to=ExpenseNotFoundException
+dependency17.type=UsesDependency
+dependency18.from=DatabaseExpense
+dependency18.to=User
+dependency18.type=UsesDependency
+dependency19.from=Balance
+dependency19.to=User
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
 dependency19.type=UsesDependency
 dependency2.from=UserAlreadyExistException
 dependency2.to=User
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 dependency20.from=MaKu
 dependency20.to=MonthlyIncome
 dependency20.type=UsesDependency
@@ -46,13 +79,27 @@ dependency22.to=Balance
 dependency22.type=UsesDependency
 dependency23.from=MaKu
 dependency23.to=DatabaseBalance
+=======
+dependency20.from=Balance
+dependency20.to=Income
+dependency20.type=UsesDependency
+dependency21.from=MaKu
+dependency21.to=User
+dependency21.type=UsesDependency
+dependency22.from=MaKu
+dependency22.to=Income
+dependency22.type=UsesDependency
+dependency23.from=MaKu
+dependency23.to=MonthlyIncome
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
 dependency23.type=UsesDependency
-dependency24.from=Balance
-dependency24.to=User
+dependency24.from=MaKu
+dependency24.to=Balance
 dependency24.type=UsesDependency
-dependency25.from=Balance
-dependency25.to=Income
+dependency25.from=MaKu
+dependency25.to=Expense
 dependency25.type=UsesDependency
+<<<<<<< HEAD
 dependency26.from=Income
 dependency26.to=User
 dependency26.type=UsesDependency
@@ -64,10 +111,24 @@ dependency28.to=DatabaseIncome
 dependency28.type=UsesDependency
 dependency29.from=MonthlyIncome
 dependency29.to=IncomeType
+=======
+dependency26.from=MaKu
+dependency26.to=ExpensePercentageNotFulfilled
+dependency26.type=UsesDependency
+dependency27.from=Expense
+dependency27.to=User
+dependency27.type=UsesDependency
+dependency28.from=Expense
+dependency28.to=Balance
+dependency28.type=UsesDependency
+dependency29.from=Expense
+dependency29.to=ExpensePercentageNotFulfilled
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
 dependency29.type=UsesDependency
 dependency3.from=DatabaseUser
 dependency3.to=User
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 dependency30.from=MonthlyIncome
 dependency30.to=User
 dependency30.type=UsesDependency
@@ -85,12 +146,36 @@ dependency34.to=IncomeAlreadyExistException
 dependency34.type=UsesDependency
 dependency35.from=DatabaseIncome
 dependency35.to=IncomeNotFoundException
+=======
+dependency30.from=Expense
+dependency30.to=DatabaseExpense
+dependency30.type=UsesDependency
+dependency31.from=Income
+dependency31.to=User
+dependency31.type=UsesDependency
+dependency32.from=Income
+dependency32.to=IncomeType
+dependency32.type=UsesDependency
+dependency33.from=Income
+dependency33.to=DatabaseIncome
+dependency33.type=UsesDependency
+dependency34.from=MonthlyIncome
+dependency34.to=IncomeType
+dependency34.type=UsesDependency
+dependency35.from=MonthlyIncome
+dependency35.to=User
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
 dependency35.type=UsesDependency
 dependency36.from=IncomeAlreadyExistException
 dependency36.to=Income
 dependency36.type=UsesDependency
+<<<<<<< HEAD
 dependency4.from=DatabaseUser
 dependency4.to=UserAlreadyExistException
+=======
+dependency4.from=DatabaseBalance
+dependency4.to=BalanceNotFoundException
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
 dependency4.type=UsesDependency
 dependency5.from=DatabaseUser
 dependency5.to=UserNotFoundException
@@ -108,17 +193,28 @@ dependency9.from=DatabaseExpense
 dependency9.to=ExpenseNotFoundException
 dependency9.type=UsesDependency
 editor.fx.0.height=739
+<<<<<<< HEAD
 editor.fx.0.width=816
 editor.fx.0.x=275
 editor.fx.0.y=-4
+=======
+editor.fx.0.width=797
+editor.fx.0.x=275
+editor.fx.0.y=0
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
 objectbench.height=66
 objectbench.width=1342
 package.divider.horizontal=0.6
 package.divider.vertical=0.8866459627329193
 package.editor.height=564
 package.editor.width=1239
+<<<<<<< HEAD
 package.editor.x=-76
 package.editor.y=50
+=======
+package.editor.x=-141
+package.editor.y=102
+>>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
 package.frame.height=744
 package.frame.width=1382
 package.numDependencies=36

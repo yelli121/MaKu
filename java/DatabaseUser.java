@@ -1,28 +1,34 @@
 import java.util.ArrayList;
 
 /**
- * Class DatabaseCustomer merupakan database Customer barang.
- * Terdiri dari array listCustomer untuk menyimpan daftar Customer dan objek Supply
+ * Class DatabaseUser merupakan database user .
+ * Terdiri dari Arraylist User untuk menyimpan daftar user
  *
  * @author Bagaskara Ghanyvian Istiqlal
- * @version 1.0 28/02/2019
+ * @version 15/05/2019
  */
 public class DatabaseUser {
     // instance variables - replace the example below with your own
     private static ArrayList<User> USER_DATABASE = new ArrayList<>();
     private static int LAST_USER_ID = 0;
 
+    
+    /**
+     * Method getLastUserId
+     * digunakan untuk mendapatkan Id terakhir yang dipakai pada database
+     */
     public static int getLastUserId() {
         return LAST_USER_ID;
     }
 
     /**
-     * Method addCustomer
-     * digunakan untuk menambahkan objek Customer baru kedalam list
+     * Method addUser
+     * digunakan untuk menambahkan objek User baru kedalam list
      *
-     * @param customer
-     * @return boolean true sebagai status telah berhasil memasukan
-     * objek
+     * @param user
+     * @return true sebagai status telah berhasil memasukan objek
+     * @exception UserAlreadyExistException ketika user yang ingin 
+     * ditambahkan sudah terdapat pada database
      */
     public static boolean addUser(User user) throws UserAlreadyExistException {
         // put your code here
@@ -37,12 +43,12 @@ public class DatabaseUser {
     }
 
     /**
-     * Method removeItem
+     * Method removeUser
      * digunakan untuk menghapus objek item dari dalam list
      *
      * @param id
-     * @return boolean true sebagai status telah berhasil menghapus
-     * objek
+     * @return true sebagai status telah berhasil menghapus user
+     * @exception UserNotFoundException ketika user tidak ditemukan
      */
     public static boolean removeUser(int id) throws UserNotFoundException {
         // put your code here
@@ -56,23 +62,21 @@ public class DatabaseUser {
     }
 
     /**
-     * Method getListCustomer
-     * digunakan untuk mendapatkan list Customer
+     * Method getListCustomer digunakan untuk mendapatkan list Customer
      *
-     * @param
-     * @return String[] listCustomer
+     * @return USER_DATABASE
      */
-    public static ArrayList<User> getCustomerDatabase() {
+    public static ArrayList<User> getUserDatabase() {
         // put your code here
         return USER_DATABASE;
     }
 
     /**
-     * Method getItem
+     * Method getUser
      * digunakan untuk mendapatkan item
      *
-     * @param
-     * @return objek Customer
+     * @param id
+     * @return user
      */
     public static User getUser(int id) {
         //put your code here
@@ -84,6 +88,13 @@ public class DatabaseUser {
         return null;
     }
 
+    /**
+     * Method getUserLogin digunakan untuk melakukan login
+     *
+     * @param username
+     * @param password
+     * @return user
+     */
     public static User getUserLogin(String username, String password) {
 
         for (User user : USER_DATABASE) {

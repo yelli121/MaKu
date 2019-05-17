@@ -13,7 +13,6 @@ public class MonthlyIncome extends Income
     SimpleDateFormat dateFormat = new SimpleDateFormat ("dd MM yyyy");
     private User user;
     private Date date;
-    private boolean isActive = false;
     
     /**
      * Konstruktor kelas MonthlyIncome
@@ -29,11 +28,7 @@ public class MonthlyIncome extends Income
     }
     
     /**
-<<<<<<< HEAD
      * Method getIncomeType untuk memanggil income type
-=======
-     * Method getIincomeType untuk memanggil income type
->>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
      * 
      * @return INCOME_TYPE
      */
@@ -51,6 +46,15 @@ public class MonthlyIncome extends Income
     }
     
     /**
+     * Method getData ini bertujuan untuk mendapatkan tanggal pemasukan
+     * 
+     * @return date tanggal pemasukan
+     */
+    public Date getDate(){
+        return date;
+    }
+    
+    /**
      * Method setUser untuk mengatur user income
      * 
      * @return user yang mempunyai saldo
@@ -60,16 +64,21 @@ public class MonthlyIncome extends Income
     }
     
     /**
+     * Method getData ini bertujuan untuk mengatur atau memasukkan tanggal pemasukan
+     * 
+     * @param date tanggal pemasukan
+     */
+    public void setDate(Date date){
+        this.date=date;
+    }
+    
+    /**
      * Method toString
      * 
-<<<<<<< HEAD
-     * @return string .
-=======
-     * @return string "belum ditentukan".
->>>>>>> 834d39af9c434bc7b5af1dbd03dff18e002542d6
+     * @return string "belum ditentukan".\
      */
     public String toString(){
-        return "Pemasukan bulanan " + user.getName() 
-        +" adalah " + getIncome()+ " rupiah.";
+        return "\nPemasukan bulanan " + user.getName() 
+        +" sebesar " + getIncome()+ " rupiah.";
     }
 }

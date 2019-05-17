@@ -40,6 +40,8 @@ public class DatabaseExpense
     /**
      * Method untuk memasukkan objek Expense baru ke array DatabaseExpense.
      * Ketentuan yang dibuat adalah satu User hanya dapat memiliki satu Expense dalam database.
+     * 
+     * @return boolean true
      */
     public static boolean addExpense(Expense expense)
     {
@@ -73,6 +75,8 @@ public class DatabaseExpense
     /**
      * Accessor untuk objek Expense dalan DatabaseExpense.
      * Expense akan dicari berdasarkan parameter id-nya.
+     * 
+     * @return Expense pengeluaran
      */
     public static Expense getExpenseFromID(int id)
     {
@@ -92,6 +96,8 @@ public class DatabaseExpense
     /**
      * Accessor untuk objek Expense dalan DatabaseExpense.
      * Expense akan dicari berdasarkan parameter user-nya.
+     * 
+     * @return Expense pengeluaran
      */
     public static Expense getExpenseFromUser(User user)
     {
@@ -111,6 +117,8 @@ public class DatabaseExpense
     /**
      * Method untuk menghilangkan sebuah objek Expense dari Database.
      * Expense akan dicari berdasarkan parameter user-nya
+     * 
+     * throws ExpenseNotFoundException jika balance user tidak ditemukan
      */
     public static boolean removeExpense(User user) throws ExpenseNotFoundException
     {

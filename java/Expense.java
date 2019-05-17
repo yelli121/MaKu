@@ -134,6 +134,11 @@ public class Expense
      * Method untuk mengembalikan string untuk dicetak.
      */
     public String toString(){
-        return "masih belum ditentukan";
+        return "\nInformasi Pengeluaran User" 
+        + "\nNama User          :   "+ getUser().getName() 
+        + "\nBudget total       :   "+ getBalance().getBudget() + " rupiah"
+        + "\nBudget makanan     :   "+ getFoodExpense() + " rupiah"
+        + "\nBudget tranportasi :   "+ getTransportExpense() + " rupiah"
+        + "\nBudget lainnya     :   "+ getAdditionalExpense() + " rupiah";
     }
 }

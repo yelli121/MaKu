@@ -55,6 +55,6 @@ public class AdditionalIncome extends Income
      * @return string .
      */
     public String toString(){
-        return "User " + user.getName() +" mendapatkan pemasukan " + getIncome()+ " rupiah.";
+        return "\nUser " + user.getName() +" mendapatkan pemasukan " + getIncome()+ " rupiah.";
     }
 }

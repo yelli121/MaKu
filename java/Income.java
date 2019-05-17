@@ -93,15 +93,4 @@ public abstract class Income
     
     public abstract String toString();
     
-    /*public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        double income=input.nextDouble();
-        double uang=0;
-        
-        if (income > 500000)
-        uang = income;
-        if (income >500000)
-        System.out.println("uang yang dimasukkan");
-        
-    }*/
 }

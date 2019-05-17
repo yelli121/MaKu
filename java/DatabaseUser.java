@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+import java.text.*;
+import java.util.*;
 
 /**
  * Class DatabaseUser merupakan database user .
@@ -9,7 +10,7 @@ import java.util.ArrayList;
  */
 public class DatabaseUser {
     // instance variables - replace the example below with your own
-    private static ArrayList<User> USER_DATABASE = new ArrayList<>();
+    private static ArrayList<User> USER_DATABASE = new ArrayList<User>();
     private static int LAST_USER_ID = 0;
 
     
@@ -38,7 +39,7 @@ public class DatabaseUser {
             }
         }
         USER_DATABASE.add(user);
-        LAST_USER_ID = user.getId();
+        LAST_USER_ID++;
         return true;
     }
 
@@ -75,17 +76,17 @@ public class DatabaseUser {
      * Method getUser
      * digunakan untuk mendapatkan item
      *
-     * @param id
+     * @param username
      * @return user
      */
-    public static User getUser(int id) {
-        //put your code here
-        for (User user : USER_DATABASE) {
-            if (user.getId() == id) {
-                return user;
+    public static User getUser(String username) {
+        User pengguna = null;
+        for (User temp : USER_DATABASE) {
+            if (temp.getUsername() == username) {
+                pengguna = temp;
             }
         }
-        return null;
+        return pengguna;
     }
 
     /**

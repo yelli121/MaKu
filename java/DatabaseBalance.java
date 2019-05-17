@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+import java.text.*;
+import java.util.*;
 /**
  * Kelas DatabaseBalance merupakan kumpulan balance yang berupa list/ database balance
  *
@@ -42,7 +43,6 @@ public class DatabaseBalance {
      * Method addBalance ini bertujuan untuk menambahkan balance ke BALANCE_DATABASE
      * 
      * @return apakah balance sudah berhasil ditambahkan atau gagal
-     * @throws BalanceAlreadyExistsException jika sudah ada balance yang sama idnya
      */
     public static boolean addBalance(Balance balance)
     {
@@ -87,18 +87,18 @@ public class DatabaseBalance {
      * @return apakah balance sudah berhasil dihapus atau tidak
      * @throws BalanceNotFoundException jika balance id tidak ditemukan
      */
-    public static boolean removeBalance(int id) throws BalanceNotFoundException
+    public static boolean removeBalance(User user) throws BalanceNotFoundException
     {
         for(Balance temp : BALANCE_DATABASE) 
         {
-            if(temp.getId() == id) 
+            if(temp.getUser() == user) 
             {
                 BALANCE_DATABASE.remove(temp);
                 return true;
             }
         }
         
-        throw new BalanceNotFoundException(id);
+        throw new BalanceNotFoundException(user);
     }    
     
 }

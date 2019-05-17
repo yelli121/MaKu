@@ -5,13 +5,13 @@
  * @version 1.0
  */
 public class BalanceNotFoundException extends Exception{
-    private int balance_error;
+    private User balance_error;
     /**
      * Konstruktor untuk objek kelas BalanceNotFoundException
      * @param balance_input balance yang tidak ditemukan                      
      */
-    public BalanceNotFoundException(int balance_input) {
-        super("balance ID : ");
+    public BalanceNotFoundException(User balance_input) {
+        super("balance for account named ");
         balance_error = balance_input;
     }
         
@@ -19,5 +19,5 @@ public class BalanceNotFoundException extends Exception{
      * Untuk menampilkan pemberitahuan berupa String
      * @return balance yang tidak ada                     
      */
-    public String getExMessage(){ return super.getMessage() + balance_error + " not found.";}
+    public String getExMessage(){ return super.getMessage() + balance_error.getName() + " not found.";}
 }

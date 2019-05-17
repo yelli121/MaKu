@@ -47,10 +47,21 @@ public class Balance
         this.user = user;
     }
     
+    /**
+     * Method setUser ini bertujuan mengembalikan parameter pemasukan user
+     * 
+     * @return   income pemasukan user
+     */
     public int getIncome(){
         return income;
     }
     
+    /**
+     * Method setUser ini bertujuan mengatur atau memasukkan parameter pemasukan user
+     * 
+     * @param   income pemasukan user
+     *
+     */
     public void  setIncome(int income){
         this.income = income;
     }
@@ -109,10 +120,21 @@ public class Balance
         this.budget = budget;
     }
     
+    /**
+     * Method setUser ini bertujuan mengembalikan parameter rasio budget user
+     * 
+     * @return   budgetratio rasio budget user
+     */
     public int getBudgetRatio(){
         return budgetratio;
     }
     
+    /**
+     * Method setUser ini bertujuan mengatur atau memasukkan parameter
+     * rasio budget user
+     * 
+     * @param   budget rasio budger userpemasukan user
+     */
     public void  setBudgetRatio(int budget){
         this.budgetratio = budget;
         this.budget = (getIncome()*budget)/100;
@@ -120,11 +142,12 @@ public class Balance
     }
     
     public String toString(){
-        return "Informasi User" 
+        return "\nInformasi User" 
         + "\nNama User          :   "+ getUser().getName() 
-        + "\nJumlah Pemasukkan  :   "+ getIncome() 
-        + "\nAlokasi Budget     :   "+ getBudget() 
-        + "\nJumlah Tabungan    :   "+ getBalance();
+        + "\nJumlah Pemasukan   :   "+ getIncome()  + " rupiah"
+        + "\nAlokasi Budget     :   "+ getBudgetRatio() + " persen dari pemasukan" 
+        + "\nJumlah Budget      :   "+ getBudget() + " rupiah"
+        + "\nJumlah Tabungan    :   "+ getBalance() + " rupiah";
         
     }
 }

@@ -105,7 +105,7 @@ public class User {
     public Calendar getBirthDate() {
         // put your code here
         Date tempDate = this.birthDate.getTime();
-        SimpleDateFormat formatter = new SimpleDateFormat("dd MMMM yyyy");
+        SimpleDateFormat formatter = new SimpleDateFormat("dd MM yyyy");
         String strDate = formatter.format(tempDate);
         //System.out.printf("Tanggal lahir : %s ", strDate);
         //System.out.println("Tanggal lahir : " + strDate);
@@ -190,17 +190,14 @@ public class User {
     /**
      * Metode ini mengembalikan semua informasi tentang Pengguna dalam String 
      *
-     * @param temp
      */
     public String toString() {
-        // put your code here
-        String temp = "Customer ID = " + this.id + "\n" +
-                "Name = " + this.name + "\n" +
-                "Username = " + this.username + "\n" +
-                "Password = " + this.password + "\n"
-                ;
-        temp += "Tanggal lahir = " + this.getBirthDate().getTime();
-        return temp;
+       return "\nInformasi User\n" +
+       "Customer ID      = " + this.id + "\n" +
+       "Name             = " + this.name + "\n" +
+       "Username         = " + this.username + "\n" +
+       "Password         = " + this.password + "\n" +
+       "Tanggal lahir    = " + this.getBirthDate().getTime();
     }
 
 

@@ -2,7 +2,7 @@
 comment0.target=BalanceNotFoundException
 comment0.text=\r\n\ Mengindikasikan\ Tidak\ Adanya\ Balance\ yang\ digunakan.\r\n\ \r\n\ @author\ Muhamad\ Fahriza\ Novriansyah\r\n\ @version\ 1.0\r\n
 comment1.params=balance_input
-comment1.target=BalanceNotFoundException(int)
+comment1.target=BalanceNotFoundException(User)
 comment1.text=\r\n\ Konstruktor\ untuk\ objek\ kelas\ BalanceNotFoundException\r\n\ @param\ balance_input\ balance\ yang\ tidak\ ditemukan\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n
 comment2.params=
 comment2.target=java.lang.String\ getExMessage()

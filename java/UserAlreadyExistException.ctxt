@@ -1,7 +1,10 @@
 #BlueJ class context
 comment0.target=UserAlreadyExistException
+comment0.text=\r\n\ Class\ UserAlreadyExistException\ akan\ memberitahu\ ketika\ terjadi\ error\ \r\n\ karena\ user\ yang\ ingin\ ditambahkan\ sudah\ terdapat\ di\ database\r\n\ \r\n\r\n\ @author\ Bagaskara\ Ghanyvian\ Istiqlal\r\n\ @version\ 15-05-2019\r\n
 comment1.params=user_input
 comment1.target=UserAlreadyExistException(User)
+comment1.text=\r\n\ Konstruktor\ untuk\ UserAlreadyExistException\ \r\n
 comment2.params=
 comment2.target=java.lang.String\ getExMessage()
+comment2.text=\r\n\ Method\ ini\ mengembalikan\ pesan\ error\r\n
 numComments=3
